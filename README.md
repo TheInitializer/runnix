@@ -1,2 +1,2 @@
-# runnix
-Troll tech support scammers the fun way.
+# screenshots
+Screenshots for use in the README. Ignore.

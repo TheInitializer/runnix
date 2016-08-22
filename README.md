@@ -8,7 +8,7 @@ Want to install it on a VM and troll some scammers? Read the instructions below!
 
 Instructions
 ------------
-#### Set up environment
+#### :computer: Set up environment
 Get a Linux distro with the Cinnamon or XFCE desktop environment. Those DEs can be customized to look very much like Windows.
 
 I'd recommend that you use Linux Mint ([linuxmint.com](https://www.linuxmint.com/)) as it has PlayOnLinux built in which you need to run LogMeIn Rescue (the primarily used remote desktop program for scammers).
@@ -17,7 +17,7 @@ After you download and set up Linux Mint, get the Windows 10 theme from [github.
 
 There are many other customizations you can do to make your system look more like Windows, but you can figure that out. Try customizing the panel and applets.
 
-#### Get runnix
+#### :arrow_down: Get runnix
 First off make sure you have PyQt5 installed, open up a terminal and type in:
 
     sudo apt-get install python-pyqt5

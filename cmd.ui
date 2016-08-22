@@ -44,14 +44,14 @@
     </property>
     <property name="font">
      <font>
-      <family>Source Code Pro,monospace</family>
+      <family>Source Code Pro,Monospace,FreeMono,monospace</family>
      </font>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background:#000;color:#fff;font-family:&quot;Source Code Pro&quot;,monospace;</string>
+     <string notr="true">background:#000;color:#fff;font-family:&quot;Source Code Pro&quot;,&quot;Monospace&quot;,&quot;FreeMono&quot;,monospace;</string>
     </property>
     <property name="horizontalScrollBarPolicy">
      <enum>Qt::ScrollBarAlwaysOff</enum>

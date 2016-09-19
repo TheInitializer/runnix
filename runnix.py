@@ -35,6 +35,7 @@ virus      = uic.loadUi(l('virus.ui'))       #  Virus protection window. Should 
 syskey     = uic.loadUi(l('syskey.ui'))      #  "Syskey" window. This one tells you that a scammer has been detected
 junkfiles  = uic.loadUi(l('junkfiles.ui'))   #  Displays "no junk files found." Can be used with prefetch or temp
 regedit    = uic.loadUi(l('regedit.ui'))     #  Haven't seen a scammer use regedit yet but it's good to be prepared
+msinfo32   = uic.loadUi(l('msinfo32.ui'))    #  MSInfo32 clone, looks just like the real thing
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -144,6 +145,8 @@ def parse_string(s):
         return junkfiles
     elif s in ("regedit", "registry"):
         return regedit
+    elif s == "msinfo32":
+        return msinfo32
     else:
         sys.exit(0)
 

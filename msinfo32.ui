@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>System Information</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string>System Summary</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>Hardware Resources</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Conflicts/Sharing</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>DMA</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Forced Hardware</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>I/O</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>IRQs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Memory</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>Components</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Multimedia</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Audio Codecs</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Video Codecs</string>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>CD-ROM</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sound Device</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Display</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Infrared</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Input</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Keyboard</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Pointing Device</string>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>Modem</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Network</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Adapter</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Protocol</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>WinSock</string>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ports</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Serial</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Parallel</string>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>Storage</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Drives</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Disks</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SCSI</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IDE</string>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>Printing</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Problem Devices</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>USB</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>Software Environment</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>System Drivers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Environment Variables</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Print Jobs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Network Connections</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Running Tasks</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Loaded Modules</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Services</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Program Groups</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Start-up Programs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OLE Registration</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Windows Error Reporting</string>
+         </property>
+        </item>
+       </item>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="showGrid">
+        <bool>false</bool>
+       </property>
+       <property name="rowCount">
+        <number>35</number>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>200</number>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>100</number>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>20</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </row>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column>
+        <property name="text">
+         <string>Item</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Value</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>OS Name</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>Microsoft Windows 10 Home</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>Version</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>10.0.14393 Build 14393
+</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>Other OS Description</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>Not Available</string>
+        </property>
+       </item>
+       <item row="3" column="0">
+        <property name="text">
+         <string>OS Manufacturer</string>
+        </property>
+       </item>
+       <item row="3" column="1">
+        <property name="text">
+         <string>Microsoft Corporation</string>
+        </property>
+       </item>
+       <item row="4" column="0">
+        <property name="text">
+         <string>System Name</string>
+        </property>
+       </item>
+       <item row="4" column="1">
+        <property name="text">
+         <string>Windows 10</string>
+        </property>
+       </item>
+       <item row="5" column="0">
+        <property name="text">
+         <string>System Manufacturer</string>
+        </property>
+       </item>
+       <item row="5" column="1">
+        <property name="text">
+         <string>Dell</string>
+        </property>
+       </item>
+       <item row="6" column="0">
+        <property name="text">
+         <string>System Model</string>
+        </property>
+       </item>
+       <item row="6" column="1">
+        <property name="text">
+         <string>XPS 27</string>
+        </property>
+       </item>
+       <item row="7" column="0">
+        <property name="text">
+         <string>System Type</string>
+        </property>
+       </item>
+       <item row="7" column="1">
+        <property name="text">
+         <string>x64-based PC</string>
+        </property>
+       </item>
+       <item row="8" column="0">
+        <property name="text">
+         <string>System SKU</string>
+        </property>
+       </item>
+       <item row="8" column="1">
+        <property name="text">
+         <string>DELL_MT_XPS27</string>
+        </property>
+       </item>
+       <item row="9" column="0">
+        <property name="text">
+         <string>Processor</string>
+        </property>
+       </item>
+       <item row="9" column="1">
+        <property name="text">
+         <string>Intel(R) Core(TM) i5-4460S CPU @ 3.40 GHz</string>
+        </property>
+       </item>
+       <item row="10" column="0">
+        <property name="text">
+         <string>BIOS Version/Date</string>
+        </property>
+       </item>
+       <item row="10" column="1">
+        <property name="text">
+         <string>Dell Inc. A11, 2016-03-24</string>
+        </property>
+       </item>
+       <item row="11" column="0">
+        <property name="text">
+         <string>SMBIOS  Version</string>
+        </property>
+       </item>
+       <item row="11" column="1">
+        <property name="text">
+         <string>2.7</string>
+        </property>
+       </item>
+       <item row="12" column="0">
+        <property name="text">
+         <string>Embedded Controller Version</string>
+        </property>
+       </item>
+       <item row="12" column="1">
+        <property name="text">
+         <string>8.145</string>
+        </property>
+       </item>
+       <item row="13" column="0">
+        <property name="text">
+         <string>BIOS Mode</string>
+        </property>
+       </item>
+       <item row="13" column="1">
+        <property name="text">
+         <string>UEFI</string>
+        </property>
+       </item>
+       <item row="14" column="0">
+        <property name="text">
+         <string>BaseBoard Manufacturer</string>
+        </property>
+       </item>
+       <item row="14" column="1">
+        <property name="text">
+         <string>Dell Inc.</string>
+        </property>
+       </item>
+       <item row="15" column="0">
+        <property name="text">
+         <string>BaseBoard Model</string>
+        </property>
+       </item>
+       <item row="15" column="1">
+        <property name="text">
+         <string>Not Available</string>
+        </property>
+       </item>
+       <item row="16" column="0">
+        <property name="text">
+         <string>BaseBoard Name</string>
+        </property>
+       </item>
+       <item row="16" column="1">
+        <property name="text">
+         <string>Base Board</string>
+        </property>
+       </item>
+       <item row="17" column="0">
+        <property name="text">
+         <string>Platform Role</string>
+        </property>
+       </item>
+       <item row="17" column="1">
+        <property name="text">
+         <string>Mobile</string>
+        </property>
+       </item>
+       <item row="18" column="0">
+        <property name="text">
+         <string>Secure Boot State</string>
+        </property>
+       </item>
+       <item row="18" column="1">
+        <property name="text">
+         <string>On</string>
+        </property>
+       </item>
+       <item row="19" column="0">
+        <property name="text">
+         <string>PCR7 Configuration</string>
+        </property>
+       </item>
+       <item row="19" column="1">
+        <property name="text">
+         <string>Binding Not Possible</string>
+        </property>
+       </item>
+       <item row="20" column="0">
+        <property name="text">
+         <string>Windows Directory</string>
+        </property>
+       </item>
+       <item row="20" column="1">
+        <property name="text">
+         <string>C:\WINDOWS</string>
+        </property>
+       </item>
+       <item row="21" column="0">
+        <property name="text">
+         <string>System Directory</string>
+        </property>
+       </item>
+       <item row="21" column="1">
+        <property name="text">
+         <string>C:\WINDOWS\system32</string>
+        </property>
+       </item>
+       <item row="22" column="0">
+        <property name="text">
+         <string>Boot Device</string>
+        </property>
+       </item>
+       <item row="22" column="1">
+        <property name="text">
+         <string>\Device\HarddiskVolume1</string>
+        </property>
+       </item>
+       <item row="23" column="0">
+        <property name="text">
+         <string>Locale</string>
+        </property>
+       </item>
+       <item row="23" column="1">
+        <property name="text">
+         <string>United States</string>
+        </property>
+       </item>
+       <item row="24" column="0">
+        <property name="text">
+         <string>Hardware Abstraction Layer</string>
+        </property>
+       </item>
+       <item row="24" column="1">
+        <property name="text">
+         <string>Version = &quot;10.0.14393.0&quot;</string>
+        </property>
+       </item>
+       <item row="25" column="0">
+        <property name="text">
+         <string>Username</string>
+        </property>
+       </item>
+       <item row="25" column="1">
+        <property name="text">
+         <string>WINDOWS10\User</string>
+        </property>
+       </item>
+       <item row="26" column="0">
+        <property name="text">
+         <string>Time Zone</string>
+        </property>
+       </item>
+       <item row="26" column="1">
+        <property name="text">
+         <string>Eastern Summer Time</string>
+        </property>
+       </item>
+       <item row="27" column="0">
+        <property name="text">
+         <string>Installed Physical Memory (RAM)</string>
+        </property>
+       </item>
+       <item row="27" column="1">
+        <property name="text">
+         <string>4.00 GB</string>
+        </property>
+       </item>
+       <item row="28" column="0">
+        <property name="text">
+         <string>Total Physical Memory</string>
+        </property>
+       </item>
+       <item row="28" column="1">
+        <property name="text">
+         <string>3.87 GB</string>
+        </property>
+       </item>
+       <item row="29" column="0">
+        <property name="text">
+         <string>Available Physical Memory</string>
+        </property>
+       </item>
+       <item row="29" column="1">
+        <property name="text">
+         <string>500 MB</string>
+        </property>
+       </item>
+       <item row="30" column="0">
+        <property name="text">
+         <string>Total Virtual Memory</string>
+        </property>
+       </item>
+       <item row="30" column="1">
+        <property name="text">
+         <string>7.63 GB</string>
+        </property>
+       </item>
+       <item row="31" column="0">
+        <property name="text">
+         <string>Available Virtual Memory</string>
+        </property>
+       </item>
+       <item row="31" column="1">
+        <property name="text">
+         <string>1.61 GB</string>
+        </property>
+       </item>
+       <item row="32" column="0">
+        <property name="text">
+         <string>Page File Space</string>
+        </property>
+       </item>
+       <item row="32" column="1">
+        <property name="text">
+         <string>3.76 GB</string>
+        </property>
+       </item>
+       <item row="33" column="0">
+        <property name="text">
+         <string>Page File</string>
+        </property>
+       </item>
+       <item row="33" column="1">
+        <property name="text">
+         <string>C:\pagefile.sys</string>
+        </property>
+       </item>
+       <item row="34" column="0">
+        <property name="text">
+         <string>Hyper-V - Data Execution Protection</string>
+        </property>
+       </item>
+       <item row="34" column="1">
+        <property name="text">
+         <string>Yes</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1250</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExport"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionSelect_All"/>
+    <addaction name="separator"/>
+    <addaction name="actionHide_Find"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionRefresh"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionContents"/>
+    <addaction name="actionAbout_System_Info"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open...</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close...</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save...</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Export...</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>Print...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionSelect_All">
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionHide_Find">
+   <property name="text">
+    <string>Hide Find</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="actionContents">
+   <property name="text">
+    <string>Contents</string>
+   </property>
+  </action>
+  <action name="actionAbout_System_Info">
+   <property name="text">
+    <string>About System Info...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

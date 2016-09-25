@@ -18,7 +18,15 @@ There are many other customizations you can do to make your system look more lik
 #### :arrow_down: Get runnix
 First off make sure you have PyQt5 installed, open up a terminal and type in:
 
+On Ubuntu-based distributions such as Linux Mint
+
     sudo apt-get install python-pyqt5
+    
+On Fedora or Fedora-based distributions:
+
+    sudo dnf install python-qt5
+    
+    
 
 Next, it's time to download runnix! Click the "Download Zip" button at the top of this page, or type into terminal:
 

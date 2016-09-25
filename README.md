@@ -9,9 +9,7 @@ Want to install it on a VM and troll some scammers? Read the instructions below!
 Instructions
 ------------
 #### :computer: Set up environment
-Get a Linux distro with the Cinnamon or XFCE desktop environment. Those DEs can be customized to look very much like Windows.
-
-I'd recommend that you use Linux Mint ([linuxmint.com](https://www.linuxmint.com/)) as it has PlayOnLinux built in which you need to run LogMeIn Rescue (the primarily used remote desktop program for scammers).
+Get a Linux distro with the Cinnamon or XFCE desktop environment such as Linux Mint ([linuxmint.com](https://www.linuxmint.com/)). Those DEs can be customized to look very much like Windows.
 
 After you download and set up Linux Mint, get the Windows 10 theme from [github.com/Elbullazul/Windows-10/](https://github.com/Elbullazul/Windows-10/). Then go into Settings > Themes and change the theme to Windows 10.
 

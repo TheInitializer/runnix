@@ -11,7 +11,7 @@ Instructions
 #### :computer: Set up environment
 Get a Linux distro with the Cinnamon or XFCE desktop environment such as Linux Mint ([linuxmint.com](https://www.linuxmint.com/)). Those DEs can be customized to look very much like Windows.
 
-After you download and set up Linux Mint, get the Windows 10 theme from [github.com/Elbullazul/Windows-10/](https://github.com/Elbullazul/Windows-10/). Then go into Settings > Themes and change the theme to Windows 10.
+After you download and set up your distribution, get the Windows 10 theme from [github.com/Elbullazul/Windows-10/](https://github.com/Elbullazul/Windows-10/). Then go into Settings > Themes and change the theme to Windows 10.
 
 There are many other customizations you can do to make your system look more like Windows, but you can figure that out. Try customizing the panel and applets.
 

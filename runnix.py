@@ -13,9 +13,6 @@ I'll need any other files as this is such a simple program :P
 ## Import modules
 from PyQt5 import QtCore, QtWidgets, QtGui, uic
 import sys
-import time
-import fileinput
-import threading
 import os
 
 ## QApplication instance
@@ -44,8 +41,6 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.ui = uic.loadUi(l('mainwindow.ui'), self)
         self.ui.show()
-
-        #self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
 
         self.ui.runIcon.pixmap = l("run_37198.jpg")
 
@@ -85,7 +80,7 @@ class CmdLine(QtWidgets.QMainWindow):
             print event.text(),
             if self.editable:
                 if (event.key() == QtCore.Qt.Key_Return or
-                    event.key() == QtCore.Qt.Key_Enter):
+                     event.key() == QtCore.Qt.Key_Enter):
                     self.parse()
                     # bypass default handling
                     return True
@@ -102,7 +97,6 @@ class CmdLine(QtWidgets.QMainWindow):
         if s in ('cd..', 'cd ..'):
             self.plainTextEdit.appendPlainText("\n")
         elif s in ('tree', 'dir /s'):
-            #threading.Thread(target=self.tree).start()
             self.tree()
         elif s == 'netstat':
             self.plainTextEdit.appendPlainText("\nAll incoming and outgoing connections are clean.\nNo foreign addresses detected.\n")
@@ -117,7 +111,6 @@ class CmdLine(QtWidgets.QMainWindow):
                 for line in tree_file:
                     self.plainTextEdit.insertPlainText(line)
                     self.plainTextEdit.moveCursor(QtGui.QTextCursor.End)
-                    #time.sleep(0.0000001)
                     QtWidgets.QApplication.processEvents()
         self.plainTextEdit.appendPlainText("\n\n\n\nNo viruses, malware, trojans or spyware found. Your computer is clean.\n")
 

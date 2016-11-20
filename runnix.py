@@ -10,20 +10,20 @@ runnix.py is basically the main Python code for this. I don't think
 I'll need any other files as this is such a simple program :P
 """
 
-## Import modules
+# Import modules
 from PyQt5 import QtCore, QtWidgets, QtGui, uic
 import sys
 import os
 
-## QApplication instance
+# QApplication instance
 app = QtWidgets.QApplication(sys.argv)
 
-## Directory where all the things are
+# Directory where all the things are
 things = os.path.dirname(os.path.abspath(__file__))
 l = lambda f: os.path.join(things, f)
 
-## Form classes for the UI files.
-## Each one is for a different window
+# Form classes for the UI files.
+# Each one is for a different window
 eventvwr   = uic.loadUi(l('eventvwr.ui'))    #  eventvwr window (displays "no errors found")
 msconfig   = uic.loadUi(l('msconfig.ui'))    #  msconfig window (displays "all services running")
 virus      = uic.loadUi(l('virus.ui'))       #  Virus protection window. Should display when the scammer enters
@@ -143,7 +143,8 @@ def parse_string(s):
     else:
         sys.exit(0)
 
-def test_parse_string(): #Py.test tests
+
+def test_parse_string():  # Py.test tests
     assert parse_string("eventvwr") == eventvwr
     assert parse_string("event viewer") == eventvwr
     assert parse_string("virus") == virus

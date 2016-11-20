@@ -158,7 +158,10 @@ def test_parse_string(): #Py.test tests
 def show_window(form_class):
     "Show window of given form class"
     if not isinstance(form_class, CmdLine):
-        form_class.exec_()
+        try:
+            form_class.exec_()
+        except AttributeError:
+            form_class.show()
 
 window = MainWindow()
 app.exec_()

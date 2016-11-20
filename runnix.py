@@ -24,15 +24,15 @@ l = lambda f: os.path.join(things, f)
 
 # Form classes for the UI files.
 # Each one is for a different window
-eventvwr   = uic.loadUi(l('eventvwr.ui'))    #  eventvwr window (displays "no errors found")
-msconfig   = uic.loadUi(l('msconfig.ui'))    #  msconfig window (displays "all services running")
-virus      = uic.loadUi(l('virus.ui'))       #  Virus protection window. Should display when the scammer enters
-                                             # anything about viruses (e.g. "virus protection", "virus", "windows defender")
-                                             # Displays "no viruses found"
-syskey     = uic.loadUi(l('syskey.ui'))      #  "Syskey" window. This one tells you that a scammer has been detected
-junkfiles  = uic.loadUi(l('junkfiles.ui'))   #  Displays "no junk files found." Can be used with prefetch or temp
-regedit    = uic.loadUi(l('regedit.ui'))     #  Haven't seen a scammer use regedit yet but it's good to be prepared
-msinfo32   = uic.loadUi(l('msinfo32.ui'))    #  MSInfo32 clone, looks just like the real thing
+eventvwr   = uic.loadUi(l('eventvwr.ui'))  #  eventvwr window (displays "no errors found")
+msconfig   = uic.loadUi(l('msconfig.ui'))  #  msconfig window (displays "all services running")
+virus      = uic.loadUi(l('virus.ui'))     #  Virus protection window. Should display when the scammer enters
+                                           # anything about viruses (e.g. "virus protection", "virus", "windows defender")
+                                           # Displays "no viruses found"
+scammers = uic.loadUi(l('scammers.ui'))    #  "Scammers detected" window. Pops up when the scammer types "syskey" or "notepad"
+junkfiles  = uic.loadUi(l('junkfiles.ui')) #  Displays "no junk files found." Can be used with prefetch or temp
+regedit    = uic.loadUi(l('regedit.ui'))   #  Haven't seen a scammer use regedit yet but it's good to be prepared
+msinfo32   = uic.loadUi(l('msinfo32.ui'))  #  MSInfo32 clone, looks just like the real thing
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -128,8 +128,8 @@ def parse_string(s):
         return eventvwr
     elif s in ("virus", "protection", "virus protection", "windows defender", "defender", "security"):
         return virus
-    elif s == "syskey":
-        return syskey
+    elif s in ("syskey", "notepad"):
+        return scammers
     elif s == "msconfig":
         return msconfig
     elif s == "cmd":
@@ -152,7 +152,7 @@ def test_parse_string():  # Py.test tests
     assert parse_string("virus protection") == virus
     assert parse_string("windows defender") == virus
     assert parse_string("defender") == virus
-    assert parse_string("syskey") == syskey
+    assert parse_string("syskey") == scammers
     assert parse_string("msconfig") == msconfig
 
 

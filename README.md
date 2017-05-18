@@ -1,10 +1,10 @@
 # runnix
 ![Run window](https://github.com/TheInitializer/runnix/blob/screenshots/Run_003.png)
-![Eventvwr window](https://github.com/TheInitializer/runnix/blob/screenshots/Event Viewer_004.png)
+![Eventvwr window](https://github.com/TheInitializer/runnix/blob/screenshots/Event%20Viewer_004.png)
 
 runnix is a program I wrote that mimics the Run box on Windows, but is meant to be run on Linux. It's for those tech support scams that involve opening up event viewer and telling people that the logs are "wiruses", etc.
 
-Want to install it on a VM and troll some scammers? Read the instructions below! I also made a [https://www.youtube.com/watch?v=0VvMx-oVTfM](tutorial video) that you should check out.
+Want to install it on a VM and troll some scammers? Read the instructions below! I also made a [tutorial video](https://www.youtube.com/watch?v=0VvMx-oVTfM) that you should check out.
 
 Instructions
 ------------
